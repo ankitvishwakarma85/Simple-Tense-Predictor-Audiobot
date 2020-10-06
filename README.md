@@ -18,19 +18,19 @@
 
 **Train.py**
 
-1) Made the necessary imports (textblob,pickle)
-2) Passed a list of tuples of the form ('sentence','label') named training (train set) to the NBC function with returns a trained model
-3) Created a list of tuples of the form ('sentence','label') named test (test set) to check the models accuracy again this examples
-4) Prdicted tense of some example sentences
-5) Stored the model inside a file named model.pickle
+1) Made the necessary imports (textblob,pickle).
+2) Passed a list of tuples of the form ('sentence','label') named training (train set) to the NBC function with returns a trained model.
+3) Created a list of tuples of the form ('sentence','label') named test (test set) to check the models accuracy again this examples.
+4) Predicted tense of some example sentences.
+5) Stored the model inside a file named model.pickle.
 
 **Test.py**
 
-1) Made the necessary imports (textblob,pickle,gtts,speech_recognition,playsound)
-2) Loaded the model from the model.pickel file created earlier
-3) speech_recognition module is used to connect to the microphone and take an audio input
-4) speech_recognition's adjust_for_ambient_noise() method adapts to the noise in the background the other speech_recognition are preety self explanatory
-5) The model is used to predict the tense of the text extracted from the audio input
+1) Made the necessary imports (textblob,pickle,gtts,speech_recognition,playsound).
+2) Loaded the model from the model.pickel file created earlier.
+3) speech_recognition module is used to connect to the microphone and take an audio input.
+4) speech_recognition's adjust_for_ambient_noise() method adapts to the noise in the background the other speech_recognition are pretty self explanatory.
+5) The model is used to predict the tense of the text extracted from the audio input.
 6) The output value of the tense along with the input statement is that concatinated and converted to an audio file using the gtts module.
 7) playsound is used to play that audio file aloud.
 8) In case an exception is raised the program asks for the audio input again.
